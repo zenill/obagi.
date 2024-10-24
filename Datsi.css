@@ -1,0 +1,10 @@
+
+table tr,th,td {
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    border: 1px solid #fff;
+    padding: 20px;
+}
+.container {
+    margin-left: 300px;
+    margin-top: -50px;
+}

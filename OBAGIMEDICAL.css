@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('/IMAGE/OBAGIBANNER.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: center; */
+    font-family: sans-serif;
+    align-items: center;
+}
+.menu-bar {
+    background-image: linear-gradient(225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex; 
+    /* cho menu các văn bản thành chiều ngang */
+    list-style: none;
+    /* bỏ các chấm tròn ở đầu văn bản */
+    color: #fff;
+}
+.menu-bar ul li {
+    width: auto;
+    height: auto;
+    /* chiều cao & rộng cửa các ul-li */
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    /* bỏ dấu gạch chân của thẻ a */
+    color: #fff;
+    /* màu của chữ trên menu-bar */
+}
+.active, .menu-bar ul li:hover {
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    border-radius: 25px;
+    /* color: #fff; */
+    /* align-items: center; */
+}
+.menu-bar .bx {
+    margin-right: 2px;
+    /* khoảng cách giữa icon và văn bản */
+}
+.sub-menu-1 {
+    display: none;
+    border-radius: 20px;
+    text-align: center;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute; 
+    /* Mở rộng thanh menu */
+    /* background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    border: 1px dotted #fff;
+    margin: 5px;
+    margin-left: -5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 1;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: -2px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 5px;
+    text-align: left;
+    line-height: 10px;
+    /* khoảng cách dòng */
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: 22E1FF;
+}
+.bx-chevrons-right {
+    float: right;
+}
+.sub-menu-2 {
+    display: none;
+    border-radius: 20px;
+    text-align: center;
+}
+.hover-me:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    border: 1px dotted #fff;
+    margin: -15px;
+    margin-left: 132px;
+    /* Khoảng cách giữa các menu đa cấp mẹ->con */
+    /* background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%); */
+    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+}

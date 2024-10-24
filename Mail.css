@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+    background: #fbc2eb;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 100px 50px;
+}
+table tr, th{
+    border: 1px solid #fff;
+    text-align: left;
+    /* align-items: center; */
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 20px;
+}
+table {
+    padding-left: 200px;
+    padding-top: 50px;
+}
